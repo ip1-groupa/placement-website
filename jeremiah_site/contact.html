@@ -19,7 +19,13 @@
 <link href="./style.css" rel="stylesheet">
 <link href="./main.3f6952e4.css" rel="stylesheet"></head>
 
-<body class="">
+<body class="minimal">
+<!--<style>
+  * {
+    background-color: black;
+  }
+</style>
+-->
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
@@ -118,6 +124,27 @@
     </div>
   </div>
 
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://placement-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
 
 <footer class="footer-container text-center">
   <div class="container">
@@ -148,6 +175,10 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+--> <script type="text/javascript" src="./main.70a66962.js"></script>
+<!-- Disqus js file to display comment count -->
+<script id="dsq-count-scr" src="//placement-1.disqus.com/count.js" async></script>
+
+</body>
 
 </html>
