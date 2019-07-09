@@ -17,4 +17,9 @@
   Background-color: Black;
  }
 
+ .navbar-nav > li > a:hover {
+   color: #ff0000 !important;
+ }
+
+
 /*# sourceMappingURL=main.css.map */
