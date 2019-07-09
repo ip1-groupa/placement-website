@@ -354,3 +354,15 @@ Main components
     bottom: 40px;
   }
 }
+
+/* -------------------------------- 
+
+Editables
+
+-------------------------------- */
+h2 {
+  color: white !important;
+}
+.navbar {
+  background-color: black !important;
+}
