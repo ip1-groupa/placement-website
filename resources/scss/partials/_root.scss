@@ -1,9 +1,25 @@
-.navbar-nav > li > a {
-  color: black !important;
-  font-size: 200px !important;
+* {
+  background-color: black;
 }
-#menu-container {
+
+.navbar-nav>li>a {
+  color: white !important;
+  font-size: 20px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* #menu-container {
   display: flex !important;
   align-items: flex-end !important;
   justify-content: center !important;
+} */
+
+.navbar-nav>li>a:hover {
+  color: #ff0000 !important;
+}
+.placement_icon:hover {
+  box-shadow: 0px 0px 5px 5px #ffffff;
 }

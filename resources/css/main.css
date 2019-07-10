@@ -1,3 +1,7 @@
+* {
+  background-color: black;
+}
+
 .navbar-nav > li > a {
   color: white !important;
   font-size: 20px !important;
@@ -5,21 +9,24 @@
   padding-right: 40px !important;
   display: flex !important;
   justify-content: center !important;
-  /* align-items: flex-end !important;*/
+}
+
+/* #menu-container {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+} */
+.navbar-nav > li > a:hover {
+  color: #ff0000 !important;
+}
+
+.placement_icon:hover {
+  box-shadow: 0px 0px 5px 5px #ffffff;
 }
 
 .placement_icon {
   width: 50px;
   height: 50px;
 }
-
-* {
-  Background-color: Black;
- }
-
- .navbar-nav > li > a:hover {
-   color: #ff0000 !important;
- }
-
 
 /*# sourceMappingURL=main.css.map */
