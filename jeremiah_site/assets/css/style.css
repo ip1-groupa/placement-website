@@ -23,3 +23,7 @@
 .brush .selection {
     fill: none;
 }
+.social-media-bar{
+    padding-left: 10%;
+    display: inline-block;
+}
