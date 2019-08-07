@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Julian</title>
+
+  <link href="./style.css" rel="stylesheet">
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+
+  <script>
+    $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-collapse");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+  </script>
+</head>
+
+
+<body class="minimal">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Header Content -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html" title=""><img class="back-icon" src="./assets/back.svg"> Back to Placement</a></li>
+            <li><a href="#Home" class="active" title="">Home</a></li>
+            <li><a href="#aboutMe" class="">About Me</a></li>
+            <li><a href="./reflection/reflection.html" title="">Internship Journey</a></li>
+            <li><a href="./contact.html" class="">Contact Me</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Add your site or app content here -->
+  <section id="Home">
+  <div class="hero-full-container background-image-container white-text-container"
+    style="background-image: url('./assets/images/work001-04.jpg'); background-color: rgba(0, 0, 0, 0.7);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I'm Julian Bara-Mason</span>
+                  <span>Entrepreneur</span>
+                  <span>Data Analyst | Front-End Developer</span>
+                  <span>Tech and Music Enthusiast.</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="aboutMe" class="aboutMe">
+    <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="section-container-spacer text-center">
+              <h1 class="h2">About Me</h1>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                    <h3>Who is Julian Bara-Mason?</h3>
+                    <p>Julian is a 21-year-old budding entrepreneur and tech enthusiast. </p>
+                    <h3>Education</h3>
+                    <p>I'm a third-year Computing (BSc. Hons) student at the African Leadership College, Mauritius. 
+                    <h3>Skills</h3>
+                    <p>
+                      <ul>
+                        <li>Data Analysis</li>
+                        <li>Front-End Web Development</li>
+                        <li>Database Development</li>
+                        <li>Leadership</li>
+                        <li>Team Work</li>
+                      </ul>
+                    </p><br>
+                    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+                  </div>
+
+                  <style>
+
+                      .brush .selection {
+                        fill: none;
+                      }
+                      
+                      </style>
+                  
+                  <div class="col-xs-12 col-md-6">
+                      <svg width="400" height="300">
+                          <filter id="monochrome"><feColorMatrix type="saturate" values="0"></feColorMatrix></filter>
+                          <defs><image class="img-responsive" id="image" width="100%" height="100%" xlink:href="assets/images/IMG_6252_1.jpg"></image></defs>
+                          <use id="monochrome-image" filter="url(#monochrome)" xlink:href="#image"></use>
+                          <use id="color-image" xlink:href="#image"></use>
+                        </svg>
+                    <br>
+                    <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="julian-bara-mason-18089814b"><a class="LI-simple-link" href='https://mu.linkedin.com/in/julian-bara-mason-18089814b?trk=profile-badge'>Julian Bara-Mason</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            
+            
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      type();
+      movingBackgroundImage();
+    });
+  </script>
+
+
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="./d3.min.js"></script>
+  
+  <script>
+
+      var brush = d3.brush();
+      
+      var svg = d3.select("svg");
+      
+      svg.append("g")
+          .attr("class", "brush")
+          .call(brush)
+          .call(brush.move, [[307, 167], [611, 539]])
+        .select(".selection")
+          .attr("id", "brush-selection");
+      
+      svg.append("clipPath")
+          .attr("id", "brush-clip")
+        .append("use")
+          .attr("xlink:href", "#brush-selection");
+      
+      svg.select("#color-image")
+          .attr("clip-path", "url(#brush-clip)");
+      
+      </script>
+       
+</body>
+<div class="footer">
+  <h4>Designed by Julian Bara-Mason || Contact information: <a href="mailto:jbara-mason17@alustudent.com">jbara-mason17@alustudent.com</a></h4>
+</div>
+</html>

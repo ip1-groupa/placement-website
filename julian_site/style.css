@@ -1,0 +1,93 @@
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    color: #f3675c !important;
+}
+
+  .navbar {
+    background-color: black !important;
+    transition: background-color 200ms linear;
+  }
+
+/*Contact Me*/
+.map-container-section {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container-section iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+  /*sdbsa*/
+  .footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+
+  /*contact*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #f3675c;
+  }
+  
+  /* Style the container/contact section */
+  .contactContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .contactColumn {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .contactRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .contactColumn, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
