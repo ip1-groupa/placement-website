@@ -17,7 +17,7 @@ html * {
 body {
   font-size: 100%;
   font-family: "Ubuntu", sans-serif;
-  color: #3e3947;
+  color: black;
   background-color: white;
 }
 
@@ -26,7 +26,7 @@ body, html {
 }
 
 a {
-  color: #3e3947;
+  color: black;
   text-decoration: none;
 }
 
@@ -58,16 +58,16 @@ Main components
   padding: 2em 0;
 }
 .cd-section:nth-of-type(odd) {
-  background-color: #3e3947;
+  background-color: black;
 }
 .cd-section:nth-of-type(odd) p {
   color: #898099;
 }
 .cd-section:nth-of-type(even) {
-  background-color: #745360;
+  background-color: grey;
 }
 .cd-section:nth-of-type(even) p {
-  color: #bda3ad;
+  color: white;
 }
 .cd-section h1, .cd-section p {
   position: absolute;
@@ -106,6 +106,9 @@ Main components
   text-transform: uppercase;
   font-size: 20px;
   font-size: 1.25rem;
+}
+.cd-section > h1 {
+  color: #f3675c !important;
 }
 .cd-section p {
   line-height: 1.6;
@@ -212,8 +215,7 @@ Main components
   margin-right: 10px;
   padding: .4em .5em;
   color: white;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 15px;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
