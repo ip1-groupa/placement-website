@@ -61,10 +61,10 @@ Main components
   background-color: black;
 }
 .cd-section:nth-of-type(odd) p {
-  color: #898099;
+  color: white;
 }
 .cd-section:nth-of-type(even) {
-  background-color: grey;
+  background-color:black;
 }
 .cd-section:nth-of-type(even) p {
   color: white;
@@ -108,6 +108,9 @@ Main components
   font-size: 1.25rem;
 }
 .cd-section > h1 {
+  color: #f3675c !important;
+}
+.cd-section > h2 {
   color: #f3675c !important;
 }
 .cd-section p {
