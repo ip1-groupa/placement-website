@@ -1,0 +1,303 @@
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    color: #f3675c !important;
+}
+
+#disqus_thread {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+}
+
+/*.col-md-6>p {
+    font-size: 13px;
+}*/
+
+.brush .selection {
+    fill: none;
+}
+.social-media-bar{
+    padding-left: 10%;
+    display: inline-block;
+}
+
+/* Styling for the M2M Profile Page */
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+#prg-counter .prg-container {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  
+}
+#prg-head h1 {
+  text-align: center;
+}
+#prg-counter h3.prg-count {
+  color:#000;
+  font-size: 3em;
+  padding: 20px 20px 6px 20px;
+}
+#prg-counter h4.prg-count-title {
+  color: rgba(120, 120, 120, 1);
+  font-size: 1.6em;
+}
+.brdr{
+  border-left: 1px solid #000;
+}
+/* Timeline for M2M History */
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+  }
+  
+  .input-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 100px;
+    max-width: 1000px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .input {
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    position: relative;
+    border-radius: 50%;
+  }
+  .input:hover {
+    cursor: pointer;
+  }
+  .input::before, .input::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    width: 4vw;
+    height: 5px;
+    max-width: 50px;
+  }
+  .input::before {
+    left: calc(-4vw + 12.5px);
+  }
+  .input::after {
+    right: calc(-4vw + 12.5px);
+  }
+  .input.active {
+    background-color: #000;
+  }
+  .input.active::before {
+    background-color: #000;
+  }
+  .input.active::after {
+    background-color: orange;
+  }
+  .input.active span {
+    font-weight: 700;
+  }
+  .input.active span::before {
+    font-size: 13px;
+  }
+  .input.active span::after {
+    font-size: 15px;
+  }
+  .input.active ~ .input, .input.active ~ .input::before, .input.active ~ .input::after {
+    background-color: orange;
+  }
+  .input span {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+  }
+  .input span::before, .input span::after {
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+  }
+  .input span::after {
+    content: attr(data-year);
+    top: 25px;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .input span::before {
+    content: attr(data-info);
+    top: -65px;
+    width: 70px;
+    transform: translateX(-5px) rotateZ(-45deg);
+    font-size: 12px;
+    text-indent: -10px;
+  }
+  
+  .description-flex-container {
+    width: 80vw;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 100px;
+    max-width: 1000px;
+  }
+  .description-flex-container p {
+    margin-top: 0;
+    display: none;
+  }
+  .description-flex-container p.active {
+    display: block;
+  }
+  
+  @media (min-width: 1250px) {
+    .input::before {
+      left: -37.5px;
+    }
+  
+    .input::after {
+      right: -37.5px;
+    }
+  }
+  @media (max-width: 850px) {
+    .input {
+      width: 17px;
+      height: 17px;
+    }
+    .input::before, .input::after {
+      height: 3px;
+    }
+    .input::before {
+      left: calc(-4vw + 8.5px);
+    }
+    .input::after {
+      right: calc(-4vw + 8.5px);
+    }
+  }
+  @media (max-width: 600px) {
+    .flex-parent {
+      justify-content: initial;
+    }
+  
+    .input-flex-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      margin-top: 15vh;
+    }
+  
+    .input {
+      width: 60px;
+      height: 60px;
+      margin: 0 10px 50px;
+      background-color: #AEB6BF;
+    }
+    .input::before, .input::after {
+      content: none;
+    }
+    .input span {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .input span::before {
+      top: calc(100% + 5px);
+      transform: translateX(-50%);
+      text-indent: 0;
+      text-align: center;
+    }
+    .input span::after {
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #ECF0F1;
+    }
+  
+
+  }
+  @media (max-width: 400px) {
+    body {
+      min-height: 950px;
+    }
+  }
+/* Timeline 2*/
+h1 {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+p {
+  font-size: .95rem;
+}
+
+.container2 {
+  max-width: 1024px;
+  width: 90%;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+/* Making the image round*/
+
+.rnd{
+   border-radius: 50%;
+}
+/* Adding margin for an image*/
+.mrgn{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
