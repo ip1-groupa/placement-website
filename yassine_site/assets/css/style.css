@@ -4,7 +4,7 @@
 }
 
 .active {
-    color: #f3675c !important;
+    color: orange !important;
 }
 
 #disqus_thread {
@@ -16,13 +16,9 @@
     scroll-behavior: smooth;
 }
 
-/*.col-md-6>p {
-    font-size: 13px;
-}*/
 
-.brush .selection {
-    fill: none;
-}
+
+/*Linkedin setup*/
 .social-media-bar{
     padding-left: 10%;
     display: inline-block;
@@ -301,3 +297,4 @@ p {
   margin-top: 10%;
   margin-bottom: 10%;
 }
+
