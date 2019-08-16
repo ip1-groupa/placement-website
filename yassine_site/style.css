@@ -4,7 +4,7 @@
 }
 
 .active {
-    color: #f3675c !important;
+    color: orange !important;
 }
 #disqus_thread {
     width: 70%;
