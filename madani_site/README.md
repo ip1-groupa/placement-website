@@ -1,1 +1,0 @@
-# jeremiahnow.github.io
